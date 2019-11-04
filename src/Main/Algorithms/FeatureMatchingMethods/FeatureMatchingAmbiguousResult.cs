@@ -16,7 +16,7 @@ namespace USC.GISResearchLab.Geocoding.Core.Algorithms.FeatureMatchingMethods
             try
             {
                 MatchedFeature prev = matchedFeatures[0];
-                for (int i = 1; i < matchedFeatures.Count; i++ )
+                for (int i = 1; i < matchedFeatures.Count; i++)
                 {
                     MatchedFeature current = matchedFeatures[i];
                     List<FeatureMatchingAmbiguity> ambiguities = DetermineAmbiguityType(inputAddress, prev, current);
